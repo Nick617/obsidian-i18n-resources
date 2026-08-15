@@ -1,1 +1,15 @@
-[]
+[
+    {
+        "id": "zETBevIPQnx2QSeTrnCis1Ks1KDJcj9N",
+        "plugin": "docxer",
+        "language": "zh-cn",
+        "version": "2.3.1",
+        "supported_versions": "2.3.1",
+        "title": "Docxer",
+        "description": "Docxer Localization & Tweaks",
+        "hash": "1c53ebaf1c53ebaf1c53ebaf1c53ebaf",
+        "created_at": "2026-08-15T15:07:06.786Z",
+        "updated_at": "2026-08-15T15:07:06.786Z",
+        "type": "plugin"
+    }
+]
