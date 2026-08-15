@@ -1,18 +1,5 @@
 [
   {
-    "id": "PV3l9qr7WspwXHTEZy9rvci3lzpslvgi",
-    "plugin": "obsidian42-brat",
-    "language": "zh-cn",
-    "version": "2.2.0",
-    "supported_versions": "2.2.0",
-    "title": "BRAT",
-    "description": "BRAT Localization & Tweaks",
-    "hash": "000baea1000baea1000baea1000baea1",
-    "created_at": "2026-08-15T15:07:33.798Z",
-    "updated_at": "2026-08-15T16:20:39.209Z",
-    "type": "plugin"
-  },
-  {
     "id": "O7EKxPdL3VCczOCUFrjhrogwVteEKl1e",
     "plugin": "pdf-plus",
     "language": "zh-cn",
