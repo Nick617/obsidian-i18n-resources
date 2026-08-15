@@ -1,18 +1,5 @@
 [
   {
-    "id": "MgJXA-KXMMln8vSHqArJyX7jgT4qUxTj",
-    "plugin": "meld-encrypt",
-    "language": "zh-cn",
-    "version": "2.4.5",
-    "supported_versions": "2.4.5",
-    "title": "Meld Encrypt",
-    "description": "Meld Encrypt Localization & Tweaks",
-    "hash": "19e163c419e163c419e163c419e163c4",
-    "created_at": "2026-08-15T15:07:24.403Z",
-    "updated_at": "2026-08-15T15:07:24.403Z",
-    "type": "plugin"
-  },
-  {
     "id": "PV3l9qr7WspwXHTEZy9rvci3lzpslvgi",
     "plugin": "obsidian42-brat",
     "language": "zh-cn",
