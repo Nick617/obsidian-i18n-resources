@@ -1,18 +1,5 @@
 [
   {
-    "id": "CDeoxh0WEbFS5Q-6w9JitK_wnw6NytMj",
-    "plugin": "docxer",
-    "language": "zh-cn",
-    "version": "2.3.1",
-    "supported_versions": "2.3.1",
-    "title": "Docxer",
-    "description": "Docxer Localization & Tweaks",
-    "hash": "7f6bee9f7f6bee9f7f6bee9f7f6bee9f",
-    "created_at": "2026-08-15T18:26:07.644Z",
-    "updated_at": "2026-08-15T18:26:07.644Z",
-    "type": "plugin"
-  },
-  {
     "id": "bC7_rc652qdfY2ie0TCGmVThcsjYseu9",
     "plugin": "meld-encrypt",
     "language": "zh-cn",
