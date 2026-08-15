@@ -11,5 +11,18 @@
         "created_at": "2026-08-15T18:27:28.640Z",
         "updated_at": "2026-08-15T18:27:28.640Z",
         "type": "plugin"
+    },
+    {
+        "id": "bC7_rc652qdfY2ie0TCGmVThcsjYseu9",
+        "plugin": "meld-encrypt",
+        "language": "zh-cn",
+        "version": "2.4.5",
+        "supported_versions": "2.4.5",
+        "title": "Meld Encrypt",
+        "description": "Meld Encrypt Localization & Tweaks",
+        "hash": "2b8680e52b8680e52b8680e52b8680e5",
+        "created_at": "2026-08-15T18:27:42.041Z",
+        "updated_at": "2026-08-15T18:27:42.041Z",
+        "type": "plugin"
     }
 ]
