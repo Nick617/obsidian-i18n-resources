@@ -184,7 +184,7 @@
                     "type": "CallExpression",
                     "name": "log",
                     "source": "error in grabCommmunityPluginList",
-                    "target": "grabCommmunityPluginList 中出现错误"
+                    "target": "获取社区插件列表中出现错误"
                 },
                 {
                     "type": "CallExpression",
@@ -233,12 +233,6 @@
                     "name": "log",
                     "source": "BRAT: lastUpdateOnline",
                     "target": "BRAT：lastUpdateOnline"
-                },
-                {
-                    "type": "CallExpression",
-                    "name": "setButtonText",
-                    "source": "Add Plugin",
-                    "target": "添加插件"
                 },
                 {
                     "type": "CallExpression",
@@ -647,6 +641,42 @@
                     "name": "title",
                     "source": "Token name configured but secret is missing. Add the secret or update the plugin configuration.",
                     "target": "已配置令牌名称，但缺少密钥。请添加密钥或更新插件配置。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Filter themes",
+                    "target": "筛选主题"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Click the 'Edit' button next to a plugin to change the installed version and the x button next to a plugin to remove it from the list.",
+                    "target": "点击插件旁边的“编辑”按钮可更改已安装的版本，点击插件旁边的“×”按钮可将其从列表中移除。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Removing from the list does not delete the plugin, this should be done from the Community Plugins tab in Settings.",
+                    "target": "从列表中移除插件并不会将其删除，删除操作应在设置中的“社区插件”选项卡中执行。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-update themes at startup",
+                    "target": "启动时自动更新主题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "If enabled all beta themes will be checked for updates each time Obsidian starts.",
+                    "target": "如果启用，每次 Obsidian 启动时都会检查所有测试版主题的更新。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Add beta theme",
+                    "target": "添加测试版主题"
                 }
             ],
             "regex": [
@@ -1017,6 +1047,46 @@
                 {
                     "source": "text:\"your GitHub account settings\"",
                     "target": "text:\"your GitHub account settings\""
+                },
+                {
+                    "source": "Beta plugin list",
+                    "target": "测试版插件列表"
+                },
+                {
+                    "source": "Beta themes list",
+                    "target": "测试版主题列表"
+                },
+                {
+                    "source": "Monitoring",
+                    "target": "监测"
+                },
+                {
+                    "source": "Tracked version",
+                    "target": "追踪版本"
+                },
+                {
+                    "source": "GitHub Personal Access Token",
+                    "target": "GitHub个人访问令牌"
+                },
+                {
+                    "source": "Add plugin",
+                    "target": "添加插件"
+                },
+                {
+                    "source": "Add theme",
+                    "target": "添加主题"
+                },
+                {
+                    "source": "Change version",
+                    "target": "更改版本"
+                },
+                {
+                    "source": "and then add it here. Please consult the documentation for more details.",
+                    "target": "然后将其添加到这里。请查阅文档以获取更多详细信息。"
+                },
+                {
+                    "source": "Set a personal access token to increase rate limits for public repositories on GitHub. You can create one in",
+                    "target": "设置一个个人访问令牌以提高对 GitHub 上公共仓库的速率限制。你可以创建一个在"
                 }
             ]
         }
