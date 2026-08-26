@@ -63,5 +63,18 @@
         "created_at": "2026-08-26T12:42:08.098Z",
         "updated_at": "2026-08-26T12:42:08.098Z",
         "type": "plugin"
+    },
+    {
+        "id": "MaIdU3xOMkyAFH4IL2s2-gfmYS3VliyI",
+        "plugin": "obsidian-bulk-rename-plugin",
+        "language": "zh-cn",
+        "version": "0.5.2",
+        "supported_versions": "0.5.2",
+        "title": "Bulk Rename",
+        "description": "Bulk Rename Localization & Tweaks",
+        "hash": "04aea0b804aea0b804aea0b804aea0b8",
+        "created_at": "2026-08-26T18:37:20.860Z",
+        "updated_at": "2026-08-26T18:37:20.860Z",
+        "type": "plugin"
     }
 ]
