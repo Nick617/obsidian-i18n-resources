@@ -1,41 +1,54 @@
 [
-  {
-    "id": "CDeoxh0WEbFS5Q-6w9JitK_wnw6NytMj",
-    "plugin": "docxer",
-    "language": "zh-cn",
-    "version": "2.3.1",
-    "supported_versions": "2.3.1",
-    "title": "Docxer",
-    "description": "Docxer Localization & Tweaks",
-    "hash": "7f6bee9f7f6bee9f7f6bee9f7f6bee9f",
-    "created_at": "2026-08-15T18:27:28.640Z",
-    "updated_at": "2026-08-15T18:27:28.640Z",
-    "type": "plugin"
-  },
-  {
-    "id": "bC7_rc652qdfY2ie0TCGmVThcsjYseu9",
-    "plugin": "meld-encrypt",
-    "language": "zh-cn",
-    "version": "2.4.5",
-    "supported_versions": "2.4.5",
-    "title": "Meld Encrypt",
-    "description": "Meld Encrypt Localization & Tweaks",
-    "hash": "2b8680e52b8680e52b8680e52b8680e5",
-    "created_at": "2026-08-15T18:27:42.041Z",
-    "updated_at": "2026-08-15T18:27:42.041Z",
-    "type": "plugin"
-  },
-  {
-    "id": "O7EKxPdL3VCczOCUFrjhrogwVteEKl1e",
-    "plugin": "pdf-plus",
-    "language": "zh-cn",
-    "version": "0.40.31",
-    "supported_versions": "0.40.31",
-    "title": "PDF++",
-    "description": "PDF++ Localization & Tweaks",
-    "hash": "048c5e3a048c5e3a048c5e3a048c5e3a",
-    "created_at": "2026-08-15T18:28:03.359Z",
-    "updated_at": "2026-08-15T18:28:03.359Z",
-    "type": "plugin"
-  }
+    {
+        "id": "CDeoxh0WEbFS5Q-6w9JitK_wnw6NytMj",
+        "plugin": "docxer",
+        "language": "zh-cn",
+        "version": "2.3.1",
+        "supported_versions": "2.3.1",
+        "title": "Docxer",
+        "description": "Docxer Localization & Tweaks",
+        "hash": "7f6bee9f7f6bee9f7f6bee9f7f6bee9f",
+        "created_at": "2026-08-15T18:27:28.640Z",
+        "updated_at": "2026-08-15T18:27:28.640Z",
+        "type": "plugin"
+    },
+    {
+        "id": "bC7_rc652qdfY2ie0TCGmVThcsjYseu9",
+        "plugin": "meld-encrypt",
+        "language": "zh-cn",
+        "version": "2.4.5",
+        "supported_versions": "2.4.5",
+        "title": "Meld Encrypt",
+        "description": "Meld Encrypt Localization & Tweaks",
+        "hash": "2b8680e52b8680e52b8680e52b8680e5",
+        "created_at": "2026-08-15T18:27:42.041Z",
+        "updated_at": "2026-08-15T18:27:42.041Z",
+        "type": "plugin"
+    },
+    {
+        "id": "O7EKxPdL3VCczOCUFrjhrogwVteEKl1e",
+        "plugin": "pdf-plus",
+        "language": "zh-cn",
+        "version": "0.40.31",
+        "supported_versions": "0.40.31",
+        "title": "PDF++",
+        "description": "PDF++ Localization & Tweaks",
+        "hash": "048c5e3a048c5e3a048c5e3a048c5e3a",
+        "created_at": "2026-08-15T18:28:03.359Z",
+        "updated_at": "2026-08-15T18:28:03.359Z",
+        "type": "plugin"
+    },
+    {
+        "id": "kHVdAhu3UVlA_rTaYLmpB8QXzMmwNZiR",
+        "plugin": "obsidian-custom-attachment-location",
+        "language": "zh-cn",
+        "version": "11.7.0",
+        "supported_versions": "11.7.0",
+        "title": "Custom Attachment Location",
+        "description": "Custom Attachment Location Localization & Tweaks",
+        "hash": "0c61669a0c61669a0c61669a0c61669a",
+        "created_at": "2026-08-26T07:04:50.354Z",
+        "updated_at": "2026-08-26T07:04:50.354Z",
+        "type": "plugin"
+    }
 ]
