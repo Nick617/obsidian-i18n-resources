@@ -165,12 +165,6 @@
                 {
                     "type": "ObjectProperty",
                     "name": "text",
-                    "source": "Peekaboo",
-                    "target": "捉迷藏"
-                },
-                {
-                    "type": "ObjectProperty",
-                    "name": "text",
                     "source": "2. Enhance security with 'Excluded files': To prevent hidden files from appearing in Search, Graph View, etc., configure 'Excluded files' under Options > Files and Links > Excluded files.",
                     "target": "2. 通过“排除文件”增强安全性：为防止隐藏文件出现在搜索、关系图等视图中，请在“选项 > 文件和链接 > 排除文件”下配置“排除文件”。"
                 },
