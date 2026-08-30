@@ -14859,6 +14859,10 @@
                 {
                     "source": "Move attachment to proper folder",
                     "target": "将附件移动到合适的文件夹"
+                },
+                {
+                    "source": "Delete unused attachments in file",
+                    "target": "删除未使用的附件"
                 }
             ]
         }
