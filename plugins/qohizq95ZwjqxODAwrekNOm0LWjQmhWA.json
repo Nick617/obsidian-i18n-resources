@@ -1,0 +1,1102 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "advanced-rename-and-delete-handler",
+        "version": "1.0.0",
+        "title": "Advanced Rename and Delete Handler",
+        "description": "Advanced Rename and Delete Handler Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "2.1.1",
+        "author": "Nick617"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": " (unloaded)",
+                    "target": "（未加载）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": ": ",
+                    "target": "："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Installed, and doing nothing yet: renames and deletions stay with Obsidian until you turn on ",
+                    "target": "已安装，但尚未执行任何操作：重命名和删除操作仍由 Obsidian 处理，直到你开启 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": " or ",
+                    "target": " 或 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "If you used an earlier version and never changed its settings, rename handling used to be on. Turn it back on to keep it.",
+                    "target": "如果你使用过早期版本且从未更改其设置，重命名处理以前是开启的。重新开启它以保留该功能。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Whether to handle renames and moves at all.",
+                    "target": "是否处理重命名和移动操作。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "When enabled, this plugin updates the links pointing at a renamed or moved file, replacing Obsidian's own link update.",
+                    "target": "启用后，此插件会更新指向已重命名或已移动文件的链接，替代 Obsidian 自带的链接更新功能。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "When disabled, Obsidian updates the links on its own, and file name aliases are left as they are. Moving and renaming attachments are separate switches below, and work either way.",
+                    "target": "禁用时，Obsidian 会自行更新链接，文件名别名保持不变。移动和重命名附件是下方的独立开关，两种情况下均可使用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Off by default, like everything else here: installing this plugin changes nothing until you turn something on.",
+                    "target": "默认关闭，与此处的其他功能一样：安装此插件不会改变任何东西，直到你开启某项功能。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Whether an attachment that collides with an existing file at the destination replaces it.",
+                    "target": "当附件与目标位置已有文件冲突时，是否替换该文件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "⚠️ This deletes the file already at the destination. When disabled, the moved attachment is renamed instead.",
+                    "target": "⚠️ 这会删除目标位置已有的文件。禁用时，被移动的附件将被重命名。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Whether deleting a note also deletes the attachments only that note referenced.",
+                    "target": "删除笔记时是否也删除仅该笔记引用的附件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "⚠️ An attachment still referenced by another note is never deleted, but everything else the note owned is.",
+                    "target": "⚠️ 仍被其他笔记引用的附件永远不会被删除，但该笔记拥有的其他所有内容都会被删除。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Whether an attachment that survives a deletion, because another note still references it, is moved into that note's attachment folder.",
+                    "target": "因其他笔记仍引用而幸存的附件是否会被移动到该笔记的附件文件夹中。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "When disabled, the attachment stays where the deleted note had put it.",
+                    "target": "禁用时，附件会留在被删除笔记放置它的位置。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Which note adopts an attachment several notes reference, highest priority first.",
+                    "target": "由哪个笔记接管多个笔记引用的附件，优先级从高到低。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Insert each entry on a new line. An entry is an extension such as ",
+                    "target": "在新行中插入每个条目。条目是扩展名，例如 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": ", a ",
+                    "target": "、一个 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": " match, or a ",
+                    "target": " 匹配，或一个 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "If the setting is empty, or two notes tie, the list settles nothing and the row below decides what happens.",
+                    "target": "如果设置为空，或两个笔记优先级相同，该列表无法决定，由下面的行决定结果。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "What to do when the priority list above settles nothing — it is empty, nothing in it matches, or two notes tie.",
+                    "target": "当上面的优先级列表无法决定时该怎么办——它是空的、其中没有任何匹配项，或者两条笔记并列。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Ask shows the notes keeping the attachment alive, says why the list did not decide, and moves the attachment into whichever one you pick.",
+                    "target": "Ask 会显示保持附件存活的笔记，说明列表为何未能决定，并将附件移动到你所选的笔记中。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Leave it in place keeps the attachment, and the folder holding it, exactly where they are.",
+                    "target": "Leave it in place 会保留附件以及存放它的文件夹，保持它们原封不动。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Files matching these entries are attachments even though their extension says otherwise.",
+                    "target": "与这些条目匹配的文件即为附件，即使其扩展名表明并非如此。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": ", or a ",
+                    "target": "，或一个 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": " frontmatter match such as ",
+                    "target": " frontmatter 匹配，例如 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": ", which is how Excalidraw marks a drawing stored as markdown.",
+                    "target": "，这是 Excalidraw 标记以 markdown 存储的绘图的方式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "A property entry matches a markdown file only once Obsidian has indexed it.",
+                    "target": "只有当 Obsidian 已为其建立索引后，属性条目才会匹配 markdown 文件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Handle only the following paths.",
+                    "target": "仅处理以下路径。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Insert each path on a new line",
+                    "target": "将每个路径插入到新的一行"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "You can use path string or ",
+                    "target": "你可以使用路径字符串或 "
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "If the setting is empty, the whole vault is handled.",
+                    "target": "如果设置为空，则处理整个仓库。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Leave the following paths alone.",
+                    "target": "保留以下路径不变。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "If the setting is empty, no paths are excluded.",
+                    "target": "如果设置为空，则不排除任何路径。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "style",
+                    "target": "style"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "button",
+                    "target": "button"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "strong",
+                    "target": "strong"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "code",
+                    "target": "code"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "br",
+                    "target": "br"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "progress",
+                    "target": "progress"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "input",
+                    "target": "input"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "pre",
+                    "target": "pre"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "ul",
+                    "target": "ul"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "li",
+                    "target": "li"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "No Intl support, please use an Intl polyfill!",
+                    "target": "不支持 Intl，请使用 Intl polyfill！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Error processing item",
+                    "target": "处理项目时出错"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Only canvas changes are supported for canvas files",
+                    "target": "canvas 文件仅支持 canvas 更改"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Node not found",
+                    "target": "未找到节点"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Node text is not a string",
+                    "target": "节点文本不是字符串"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Unsupported file change",
+                    "target": "不支持的文件更改"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "initialized",
+                    "target": "已初始化"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "OK",
+                    "target": "确定"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Leave it here",
+                    "target": "保留在此处"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Use the same answer for the rest of this deletion",
+                    "target": "对本次删除的其余部分使用相同答案"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Attachment used by several notes",
+                    "target": "被多个笔记使用的附件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Reset to the current value, leaving this setting as it is",
+                    "target": "重置为当前值，保持此设置不变"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Instance method `debug.destroy()` is deprecated and no longer does anything. It will be removed in the next major version of `debug`.",
+                    "target": "实例方法 `debug.destroy()` 已弃用且不再执行任何操作。它将在 `debug` 的下一个主要版本中被移除。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "accessing an object - but returnObjects options is not enabled!",
+                    "target": "正在访问对象 - 但未启用 returnObjects 选项！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Seems the loaded translations were in flat JSON format instead of nested. Either set keySeparator: false on init or make sure your translations are published in nested format.",
+                    "target": "似乎加载的翻译是扁平 JSON 格式而非嵌套格式。请在初始化时设置 keySeparator: false，或确保您的翻译以嵌套格式发布。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "This means something IS WRONG in your setup. You access the t function before i18next.init / i18next.loadNamespace / i18next.changeLanguage was done. Wait for the callback or Promise to resolve before accessing it!!!",
+                    "target": "这意味着你的配置中存在问题。你在 i18next.init / i18next.loadNamespace / i18next.changeLanguage 完成之前访问了 t 函数。请等待回调或 Promise 解析后再访问它！！！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "nesting options string contains interpolated variables with escapeValue: false — if any of those values are attacker-controlled they can inject additional nesting options (e.g. redirect lng/ns). Sanitise untrusted input before passing it to t(), or keep escapeValue: true.",
+                    "target": "嵌套选项字符串包含插值变量且 escapeValue: false —— 如果其中任何值受攻击者控制，他们可以注入额外的嵌套选项（例如重定向 lng/ns）。在将不受信任的输入传递给 t() 之前对其进行清理，或保持 escapeValue: true。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "No backend was added via i18next.use. Will not load resources.",
+                    "target": "未通过 i18next.use 添加后端。将不会加载资源。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "init: no languageDetector is used and no lng is defined",
+                    "target": "init：未使用 languageDetector 且未定义 lng"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "init: i18next is already initialized. You should call init just once!",
+                    "target": "init：i18next 已初始化。你应该只调用一次 init！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "hasLoadedNamespace: i18next was not initialized",
+                    "target": "hasLoadedNamespace：i18next 未初始化"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "hasLoadedNamespace: i18n.languages were undefined or empty",
+                    "target": "hasLoadedNamespace：i18n.languages 未定义或为空"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "[remark-wiki-link] Warning: please upgrade to remark 13 to use this plugin",
+                    "target": "[remark-wiki-link] 警告：请升级到 remark 13 以使用此插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "advanced-rename-and-delete-handler rescue-ambiguity-reason",
+                    "target": "advanced-rename-and-delete-handler rescue-ambiguity-reason"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "advanced-rename-and-delete-handler rescue-ambiguity-buttons",
+                    "target": "advanced-rename-and-delete-handler rescue-ambiguity-buttons"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "advanced-rename-and-delete-handler rescue-ambiguity-notes",
+                    "target": "advanced-rename-and-delete-handler rescue-ambiguity-notes"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "These enabled plugins declare this one as a dependency. Disabling or uninstalling it stops them until it is back. Select one to open its settings.",
+                    "target": "这些已启用的插件将此项声明为依赖项。禁用或卸载它将导致这些插件停止工作，直到它恢复为止。选择一个以打开其设置。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Whether renaming a note also rewrites the display text of the links that pointed at its old name.",
+                    "target": "重命名笔记时是否也重写指向其旧名称的链接的显示文本。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Whether renaming a note also renames or moves its attachment folder alongside it.",
+                    "target": "重命名笔记时是否也重命名或移动其附件文件夹。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Whether renaming a note also renames the attachment files that travel with it, so their names keep matching the note.",
+                    "target": "重命名笔记时是否也重命名随其移动的附件文件，以便它们的名称与笔记保持一致。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "What to do with a folder that a deletion or a move has left empty.",
+                    "target": "删除或移动操作导致文件夹为空时如何处理该文件夹。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "body external links",
+                    "target": "正文外部链接"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "frontmatter external links",
+                    "target": "frontmatter 外部链接"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "multi-value frontmatter external links",
+                    "target": "多值 frontmatter 外部链接"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "multi-value frontmatter links",
+                    "target": "多值 frontmatter 链接"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Plugins that depend on this one",
+                    "target": "依赖此插件的插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Renames and moves",
+                    "target": "重命名和移动"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Deletions",
+                    "target": "删除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "heading",
+                    "source": "Scope",
+                    "target": "范围"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Debug mode: intentional placeholder error. See https://mnaoumov.dev/obsidian-dev-utils/guides/debugging/.",
+                    "target": "调试模式：故意占位符错误。请参阅 https://mnaoumov.dev/obsidian-dev-utils/guides/debugging/。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "retryWithTimeout failed",
+                    "target": "retryWithTimeout 失败"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Run with timeout failed",
+                    "target": "带超时运行失败"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "loop failed",
+                    "target": "loop 失败"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open demo vault",
+                    "target": "打开演示库"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Unlock active note",
+                    "target": "解锁当前笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "attention",
+                    "target": "attention"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "autolink",
+                    "target": "autolink"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "definition",
+                    "target": "definition"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "list",
+                    "target": "list"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Delete empty folders",
+                    "target": "删除空文件夹"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Should handle renames",
+                    "target": "应处理重命名"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Should update file name aliases",
+                    "target": "应更新文件名别名"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Should rename attachment folder",
+                    "target": "应重命名附件文件夹"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Should rename attachment files",
+                    "target": "应重命名附件文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Should delete conflicting attachments",
+                    "target": "应删除冲突的附件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Should handle deletions",
+                    "target": "应处理删除操作"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Empty folder behavior",
+                    "target": "空文件夹行为"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Should rescue shared attachments",
+                    "target": "应恢复共享附件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Note priorities",
+                    "target": "笔记优先级"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Treat as attachment extensions",
+                    "target": "视为附件扩展名"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Include paths",
+                    "target": "包含路径"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Exclude paths",
+                    "target": "排除路径"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Required by",
+                    "target": "所需条件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "When several notes could adopt the attachment",
+                    "target": "当多个笔记可能采用该附件时"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prompt",
+                    "source": "Ask which note adopts it",
+                    "target": "询问哪个笔记采用它"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prop",
+                    "source": "Keep",
+                    "target": "保留"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prop",
+                    "source": "Delete",
+                    "target": "删除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "prop",
+                    "source": "Delete with empty parents",
+                    "target": "删除并清空父项"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "skip",
+                    "source": "Leave it in place",
+                    "target": "保持原位"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Should handle renames",
+                    "target": "应处理重命名"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Should handle deletions",
+                    "target": "应处理删除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Open settings",
+                    "target": "打开设置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Each row shows what this plugin holds now and what is proposed. Edit a suggested value, or reset a row to keep the current one. Nothing is written until you press OK.",
+                    "target": "每一行显示此插件当前持有的内容以及建议的内容。编辑建议值，或将某行重置为保留当前值。在你按下确定之前，不会写入任何内容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Pick the note that should adopt it, or leave it where it is.",
+                    "target": "选择应采用它的笔记，或将其保留在原处。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Still referenced by:",
+                    "target": "仍被引用："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "{{pluginName}} release notes",
+                    "target": "{{pluginName}} 发布说明"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "type",
+                    "source": "checkbox",
+                    "target": "checkbox"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "error(\"No Intl support, please use an Intl polyfill!\")",
+                    "target": "error(\"No Intl support, please use an Intl polyfill!\")"
+                },
+                {
+                    "source": "log(\"languageChanged\",c)):this.isLanguageChangingTo=void 0,r.resolve((...u)=>this.t(...u)),t&&t(l,(...u)=>this.t(...u))},\"done\")",
+                    "target": "log(\"languageChanged\",c)):this.isLanguageChangingTo=void 0,r.resolve((...u)=>this.t(...u)),t&&t(l,(...u)=>this.t(...u))},\"done\")"
+                },
+                {
+                    "source": "appendText(\" (unloaded)\")",
+                    "target": "appendText(\" (unloaded)\")"
+                },
+                {
+                    "source": "appendText(`\n`)",
+                    "target": "appendText(`\n`)"
+                },
+                {
+                    "source": "Notice(`Could not find plugin ${a} in the community plugins registry.`)",
+                    "target": "Notice(`Could not find plugin ${a} in the community plugins registry.`)"
+                },
+                {
+                    "source": "Notice(`No demo vault is available for plugin ${t} v${a}.`)",
+                    "target": "Notice(`No demo vault is available for plugin ${t} v${a}.`)"
+                },
+                {
+                    "source": "error(`Invalid settings from data.json. Expected Object, got: ${typeof t}`)",
+                    "target": "error(`Invalid settings from data.json. Expected Object, got: ${typeof t}`)"
+                },
+                {
+                    "source": "appendText(\": \")",
+                    "target": "appendText(\": \")"
+                },
+                {
+                    "source": "appendText(\" \")",
+                    "target": "appendText(\" \")"
+                },
+                {
+                    "source": "appendText(`: ${i.operationName}`)",
+                    "target": "appendText(`: ${i.operationName}`)"
+                },
+                {
+                    "source": "error(\"Only canvas changes are supported for canvas files\",{change:u,path:i});continue}let d=l.nodes[u.reference.nodeIndex];if(!d)return console.error(\"Node not found\",{nodeIndex:u.reference.nodeIndex,path:i}),r;if(uS(u)){if(d.file!==u.oldContent)return B(\"FileChange:applyCanvasChanges\")",
+                    "target": "error(\"Only canvas changes are supported for canvas files\",{change:u,path:i});continue}let d=l.nodes[u.reference.nodeIndex];if(!d)return console.error(\"Node not found\",{nodeIndex:u.reference.nodeIndex,path:i}),r;if(uS(u)){if(d.file!==u.oldContent)return B(\"FileChange:applyCanvasChanges\")"
+                },
+                {
+                    "source": "error(\"Node not found\",{nodeIndex:u,path:i}),r;if(typeof p.text!=\"string\")",
+                    "target": "error(\"Node not found\",{nodeIndex:u,path:i}),r;if(typeof p.text!=\"string\")"
+                },
+                {
+                    "source": "error(\"Unsupported file change\",m):(jS(m,d)&&(m.newContent=m.newContent.replaceAll(Wh,()=>kS)),u.push(m))}return u}o(BS,\"getFileChanges\")",
+                    "target": "error(\"Unsupported file change\",m):(jS(m,d)&&(m.newContent=m.newContent.replaceAll(Wh,()=>kS)),u.push(m))}return u}o(BS,\"getFileChanges\")"
+                },
+                {
+                    "source": "Notice(`Updated ${Tc(r.size,\"link\")} in ${Tc(t.size,\"file\")}.`)",
+                    "target": "Notice(`Updated ${Tc(r.size,\"link\")} in ${Tc(t.size,\"file\")}.`)"
+                },
+                {
+                    "source": "Notice(`Attachment ${t} is still used by other notes. It was moved to ${s}.`)",
+                    "target": "Notice(`Attachment ${t} is still used by other notes. It was moved to ${s}.`)"
+                },
+                {
+                    "source": "Notice(`Attachment ${r} is still used by other notes. Its folder was moved to ${l.newFolderPath}.`)",
+                    "target": "Notice(`Attachment ${r} is still used by other notes. Its folder was moved to ${l.newFolderPath}.`)"
+                },
+                {
+                    "source": "appendText(\"Installed, and doing nothing yet: renames and deletions stay with Obsidian until you turn on \")",
+                    "target": "appendText(\"Installed, and doing nothing yet: renames and deletions stay with Obsidian until you turn on \")"
+                },
+                {
+                    "source": "appendText(\" or \")",
+                    "target": "appendText(\" or \")"
+                },
+                {
+                    "source": "appendText(\"If you used an earlier version and never changed its settings, rename handling used to be on. Turn it back on to keep it.\")",
+                    "target": "appendText(\"If you used an earlier version and never changed its settings, rename handling used to be on. Turn it back on to keep it.\")"
+                },
+                {
+                    "source": "setText(`Settings proposed by ${this.sourcePluginName}`)",
+                    "target": "setText(`Settings proposed by ${this.sourcePluginName}`)"
+                },
+                {
+                    "source": "setDesc(`Currently: ${mm(e.currentValue)}`)",
+                    "target": "setDesc(`Currently: ${mm(e.currentValue)}`)"
+                },
+                {
+                    "source": "setTooltip(\"Reset to the current value, leaving this setting as it is\")",
+                    "target": "setTooltip(\"Reset to the current value, leaving this setting as it is\")"
+                },
+                {
+                    "source": "setButtonText(`${t.pluginName} ${t.pluginVersion}`)",
+                    "target": "setButtonText(`${t.pluginName} ${t.pluginVersion}`)"
+                },
+                {
+                    "source": "appendText(\"Whether to handle renames and moves at all.\")",
+                    "target": "appendText(\"Whether to handle renames and moves at all.\")"
+                },
+                {
+                    "source": "appendText(\"When enabled, this plugin updates the links pointing at a renamed or moved file, replacing Obsidian's own link update.\")",
+                    "target": "appendText(\"When enabled, this plugin updates the links pointing at a renamed or moved file, replacing Obsidian's own link update.\")"
+                },
+                {
+                    "source": "appendText(\"When disabled, Obsidian updates the links on its own, and file name aliases are left as they are. Moving and renaming attachments are separate switches below, and work either way.\")",
+                    "target": "appendText(\"When disabled, Obsidian updates the links on its own, and file name aliases are left as they are. Moving and renaming attachments are separate switches below, and work either way.\")"
+                },
+                {
+                    "source": "appendText(\"Off by default, like everything else here: installing this plugin changes nothing until you turn something on.\")",
+                    "target": "appendText(\"Off by default, like everything else here: installing this plugin changes nothing until you turn something on.\")"
+                },
+                {
+                    "source": "appendText(\"Whether an attachment that collides with an existing file at the destination replaces it.\")",
+                    "target": "appendText(\"Whether an attachment that collides with an existing file at the destination replaces it.\")"
+                },
+                {
+                    "source": "appendText(\"Whether deleting a note also deletes the attachments only that note referenced.\")",
+                    "target": "appendText(\"Whether deleting a note also deletes the attachments only that note referenced.\")"
+                },
+                {
+                    "source": "appendText(\"Whether an attachment that survives a deletion, because another note still references it, is moved into that note's attachment folder.\")",
+                    "target": "appendText(\"Whether an attachment that survives a deletion, because another note still references it, is moved into that note's attachment folder.\")"
+                },
+                {
+                    "source": "appendText(\"When disabled, the attachment stays where the deleted note had put it.\")",
+                    "target": "appendText(\"When disabled, the attachment stays where the deleted note had put it.\")"
+                },
+                {
+                    "source": "appendText(\"Which note adopts an attachment several notes reference, highest priority first.\")",
+                    "target": "appendText(\"Which note adopts an attachment several notes reference, highest priority first.\")"
+                },
+                {
+                    "source": "appendText(\"Insert each entry on a new line. An entry is an extension such as \")",
+                    "target": "appendText(\"Insert each entry on a new line. An entry is an extension such as \")"
+                },
+                {
+                    "source": "appendText(\", a \")",
+                    "target": "appendText(\", a \")"
+                },
+                {
+                    "source": "appendText(\" match, or a \")",
+                    "target": "appendText(\" match, or a \")"
+                },
+                {
+                    "source": "appendText(\"If the setting is empty, or two notes tie, the list settles nothing and the row below decides what happens.\")",
+                    "target": "appendText(\"If the setting is empty, or two notes tie, the list settles nothing and the row below decides what happens.\")"
+                },
+                {
+                    "source": "appendText(\"Ask shows the notes keeping the attachment alive, says why the list did not decide, and moves the attachment into whichever one you pick.\")",
+                    "target": "appendText(\"Ask shows the notes keeping the attachment alive, says why the list did not decide, and moves the attachment into whichever one you pick.\")"
+                },
+                {
+                    "source": "appendText(\"Leave it in place keeps the attachment, and the folder holding it, exactly where they are.\")",
+                    "target": "appendText(\"Leave it in place keeps the attachment, and the folder holding it, exactly where they are.\")"
+                },
+                {
+                    "source": "appendText(\"Files matching these entries are attachments even though their extension says otherwise.\")",
+                    "target": "appendText(\"Files matching these entries are attachments even though their extension says otherwise.\")"
+                },
+                {
+                    "source": "appendText(\", or a \")",
+                    "target": "appendText(\", or a \")"
+                },
+                {
+                    "source": "appendText(\" frontmatter match such as \")",
+                    "target": "appendText(\" frontmatter match such as \")"
+                },
+                {
+                    "source": "appendText(\", which is how Excalidraw marks a drawing stored as markdown.\")",
+                    "target": "appendText(\", which is how Excalidraw marks a drawing stored as markdown.\")"
+                },
+                {
+                    "source": "appendText(\"A property entry matches a markdown file only once Obsidian has indexed it.\")",
+                    "target": "appendText(\"A property entry matches a markdown file only once Obsidian has indexed it.\")"
+                },
+                {
+                    "source": "appendText(\"Handle only the following paths.\")",
+                    "target": "appendText(\"Handle only the following paths.\")"
+                },
+                {
+                    "source": "appendText(\"Insert each path on a new line\")",
+                    "target": "appendText(\"Insert each path on a new line\")"
+                },
+                {
+                    "source": "appendText(\"You can use path string or \")",
+                    "target": "appendText(\"You can use path string or \")"
+                },
+                {
+                    "source": "appendText(\"If the setting is empty, the whole vault is handled.\")",
+                    "target": "appendText(\"If the setting is empty, the whole vault is handled.\")"
+                },
+                {
+                    "source": "appendText(\"Leave the following paths alone.\")",
+                    "target": "appendText(\"Leave the following paths alone.\")"
+                },
+                {
+                    "source": "appendText(\"If the setting is empty, no paths are excluded.\")",
+                    "target": "appendText(\"If the setting is empty, no paths are excluded.\")"
+                },
+                {
+                    "source": "setText(\"Attachment used by several notes\")",
+                    "target": "setText(\"Attachment used by several notes\")"
+                },
+                {
+                    "source": "setName(\"Use the same answer for the rest of this deletion\")",
+                    "target": "setName(\"Use the same answer for the rest of this deletion\")"
+                },
+                {
+                    "source": "setButtonText(`Move to ${i}`)",
+                    "target": "setButtonText(`Move to ${i}`)"
+                },
+                {
+                    "source": "setTooltip(`Move the attachment into the attachment folder of ${s}`)",
+                    "target": "setTooltip(`Move the attachment into the attachment folder of ${s}`)"
+                },
+                {
+                    "source": "setButtonText(\"Leave it here\")",
+                    "target": "setButtonText(\"Leave it here\")"
+                },
+                {
+                    "source": "name:\"Handle rename: {{oldPath}} -> {{newPath}}\"",
+                    "target": "name:\"Handle rename: {{oldPath}} -> {{newPath}}\""
+                },
+                {
+                    "source": "text:`Open demo vault for latest version (v${f})`",
+                    "target": "text:`Open demo vault for latest version (v${f})`"
+                },
+                {
+                    "source": "text:`Open demo vault for current version (v${p})`",
+                    "target": "text:`Open demo vault for current version (v${p})`"
+                },
+                {
+                    "source": "name:\"Open demo vault\"",
+                    "target": "name:\"Open demo vault\""
+                },
+                {
+                    "source": "name:\"Unlock active note\"",
+                    "target": "name:\"Unlock active note\""
+                },
+                {
+                    "source": "description:\"body external links\"",
+                    "target": "description:\"body external links\""
+                },
+                {
+                    "source": "description:\"frontmatter external links\"",
+                    "target": "description:\"frontmatter external links\""
+                },
+                {
+                    "source": "description:\"multi-value frontmatter external links\"",
+                    "target": "description:\"multi-value frontmatter external links\""
+                },
+                {
+                    "source": "description:\"multi-value frontmatter links\"",
+                    "target": "description:\"multi-value frontmatter links\""
+                },
+                {
+                    "source": "name:\"Delete empty folders\"",
+                    "target": "name:\"Delete empty folders\""
+                },
+                {
+                    "source": "text:\"Should handle renames\"",
+                    "target": "text:\"Should handle renames\""
+                },
+                {
+                    "source": "text:\"Should handle deletions\"",
+                    "target": "text:\"Should handle deletions\""
+                },
+                {
+                    "source": "text:\"Open settings\"",
+                    "target": "text:\"Open settings\""
+                },
+                {
+                    "source": "name:\"Should handle renames\"",
+                    "target": "name:\"Should handle renames\""
+                },
+                {
+                    "source": "name:\"Should update file name aliases\"",
+                    "target": "name:\"Should update file name aliases\""
+                },
+                {
+                    "source": "name:\"Should rename attachment folder\"",
+                    "target": "name:\"Should rename attachment folder\""
+                },
+                {
+                    "source": "name:\"Should rename attachment files\"",
+                    "target": "name:\"Should rename attachment files\""
+                },
+                {
+                    "source": "name:\"Should delete conflicting attachments\"",
+                    "target": "name:\"Should delete conflicting attachments\""
+                },
+                {
+                    "source": "name:\"Should handle deletions\"",
+                    "target": "name:\"Should handle deletions\""
+                },
+                {
+                    "source": "name:\"Empty folder behavior\"",
+                    "target": "name:\"Empty folder behavior\""
+                },
+                {
+                    "source": "name:\"Should rescue shared attachments\"",
+                    "target": "name:\"Should rescue shared attachments\""
+                },
+                {
+                    "source": "name:\"Note priorities\"",
+                    "target": "name:\"Note priorities\""
+                },
+                {
+                    "source": "name:\"Treat as attachment extensions\"",
+                    "target": "name:\"Treat as attachment extensions\""
+                },
+                {
+                    "source": "name:\"Include paths\"",
+                    "target": "name:\"Include paths\""
+                },
+                {
+                    "source": "name:\"Exclude paths\"",
+                    "target": "name:\"Exclude paths\""
+                },
+                {
+                    "source": "text:`${this.sourcePluginName} used to handle renames and deletions itself and no longer does. It proposes the settings it held, so this vault keeps behaving the way it did.`",
+                    "target": "text:`${this.sourcePluginName} used to handle renames and deletions itself and no longer does. It proposes the settings it held, so this vault keeps behaving the way it did.`"
+                },
+                {
+                    "source": "text:\"Each row shows what this plugin holds now and what is proposed. Edit a suggested value, or reset a row to keep the current one. Nothing is written until you press OK.\"",
+                    "target": "text:\"Each row shows what this plugin holds now and what is proposed. Edit a suggested value, or reset a row to keep the current one. Nothing is written until you press OK.\""
+                },
+                {
+                    "source": "name:\"Required by\"",
+                    "target": "name:\"Required by\""
+                },
+                {
+                    "source": "name:\"When several notes could adopt the attachment\"",
+                    "target": "name:\"When several notes could adopt the attachment\""
+                },
+                {
+                    "source": "text:`${this.attachmentPath} survives this deletion because other notes still reference it, so the folder holding it survives too.`",
+                    "target": "text:`${this.attachmentPath} survives this deletion because other notes still reference it, so the folder holding it survives too.`"
+                },
+                {
+                    "source": "text:\"Pick the note that should adopt it, or leave it where it is.\"",
+                    "target": "text:\"Pick the note that should adopt it, or leave it where it is.\""
+                },
+                {
+                    "source": "text:\"Still referenced by:\"",
+                    "target": "text:\"Still referenced by:\""
+                }
+            ]
+        }
+    }
+}
